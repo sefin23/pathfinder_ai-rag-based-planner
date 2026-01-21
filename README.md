@@ -1,4 +1,4 @@
-Pathfinder AI
+Pathfinder AI:
 A user is facing a life situation but doesn't know where to start. For example, the user types, I'm finishing college and moving to a new city for my first job and uploads their offer letter. The app understands the situation and breaks it into steps like documentation, accommodation, banking, and onboarding, with suggested timelines. As tasks are completed or circumstances change, the system updates the plan and shows what needs attention next, helping the user move forward without feeling overwhelmed.
 
 Pathfinder AI is a life-event oriented planning assistant that helps users manage both small tasks and long-term situations by organizing actions, priorities,documents, and timelines into clear, adaptable workflows.
