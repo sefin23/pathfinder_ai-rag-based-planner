@@ -8,11 +8,42 @@ The system supports:
 - situations that span days, months, or even years
 - dynamic checklists, reminders, and notes that evolve over time
 
-Design Choice: Progressive Clarification over Perfect Input
-Pathfinder AI is designed for users who may not fully understand or clearly explain their situation at the start. Instead of requiring detailed or “perfect” input, the system accepts vague descriptions and gradually asks small, focused follow-up questions to build clarity.
+
+Core Design Philosophy
+1. Life-Event First, Not Task First
+Engineering decision: Model the system around life events, not flat to-do lists.
+Why:
+Tasks only make sense when they are grounded in context.
+A “Prepare documents” task is meaningless unless the system understands why the documents are needed.
+Result:
+All workflows, deadlines, and reminders are scoped under a life event that can last days, months, or years.
+
+2. Progressive Clarification over Perfect Input
+Engineering decision: Accept vague input and clarify gradually instead of forcing structured forms upfront.
+Why:
+Users often cannot articulate all details at once, especially during stressful situations.
+Requiring perfect input early leads to abandonment or incorrect assumptions.
 Example:
 User: “I’m moving soon and things feel overwhelming.”
 System: “Is this move related to a job, studies, or something else?”
+Result:
+Reduced cognitive load
+Fewer incorrect assumptions
+More human-like, conversational behavior
+This behavior is enforced at the prompt and system-logic level, not left to chance.
+
+3. AI Assists, Never Decides
+Engineering decision: AI suggestions are always editable, optional, and explicitly labeled as recommendations.
+Why:
+Fully autonomous task generation risks incorrect advice and loss of user trust.
+For life-critical situations, control must remain with the user.
+Result:
+AI proposes workflows
+User approves, modifies, or rejects each part
+No automatic irreversible actions
+Design Choice: Progressive Clarification over Perfect Input
+
+
 
 Pathfinder AI assists users by:
 - understanding the context of a life event
