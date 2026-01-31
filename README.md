@@ -8,6 +8,12 @@ The system supports:
 - situations that span days, months, or even years
 - dynamic checklists, reminders, and notes that evolve over time
 
+Design Choice: Progressive Clarification over Perfect Input
+Pathfinder AI is designed for users who may not fully understand or clearly explain their situation at the start. Instead of requiring detailed or “perfect” input, the system accepts vague descriptions and gradually asks small, focused follow-up questions to build clarity.
+Example:
+User: “I’m moving soon and things feel overwhelming.”
+System: “Is this move related to a job, studies, or something else?”
+
 Pathfinder AI assists users by:
 - understanding the context of a life event
 - identifying commonly required documents and steps
